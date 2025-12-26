@@ -1,0 +1,134 @@
+/* GENEL AYARLAR */
+:root {
+    --gold: #d4af37;
+    --dark: #222222;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .logo {
+    font-family: 'Playfair Display', serif;
+}
+
+/* NAVBAR & LOGO */
+.logo {
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--dark) !important;
+}
+
+.logo span {
+    font-size: 12px;
+    letter-spacing: 3px;
+    display: block;
+    color: #999;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: var(--dark);
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color: var(--gold) !important;
+}
+
+/* RENK VE TYPOGRAPHY UTILS */
+.text-gold {
+    color: var(--gold) !important;
+}
+
+.bg-dark {
+    background-color: var(--dark) !important;
+}
+
+.sub-title {
+    color: var(--gold);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+/* BUTONLAR */
+.btn-gold {
+    background-color: var(--gold);
+    border: 2px solid var(--gold);
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.btn-gold:hover {
+    background-color: transparent;
+    color: var(--gold);
+}
+
+.btn-outline-light {
+    border: 2px solid white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.btn-outline-light:hover {
+    background-color: white;
+    color: var(--dark);
+}
+
+/* HERO SECTION */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1600596542815-27b88e39e140?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    margin-top: -76px; /* Navbar'ın arkasına geçmesi için */
+    padding-top: 76px;
+}
+
+/* PROCESS NUMBERS */
+.process-number {
+    font-size: 50px;
+    color: var(--gold);
+    opacity: 0.8;
+    margin-bottom: 0;
+}
+
+/* PORTFOLIO IMAGES */
+.portfolio-item {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+/* FORMS */
+.form-control:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 0.2rem rgba(212, 175, 55, 0.25);
+}
